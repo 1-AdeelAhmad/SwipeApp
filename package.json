@@ -1,4 +1,5 @@
 {
+  "homepage": "http://1-AdeelAhmad.github.io/SwipeApp",
   "name": "SwipeApp",
   "version": "0.1.0",
   "private": true,
@@ -21,6 +22,7 @@
     "axios": "^0.21.4",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
+    "gh-pages": "^3.2.3",
     "picsum-photos": "^3.0.7",
     "random-word-slugs": "0.0.5",
     "react": "^17.0.2",
@@ -39,7 +41,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
