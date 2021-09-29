@@ -82,13 +82,13 @@ const Library = ({ workers, isLoading, error, hiredWorkers, removedWorkers}: Lib
      return (
           <Container maxWidth="sm">
                <Box style={{ height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start'}}>
-                    <Typography sx={{fontVariantCaps: 'all-petite-caps', mt: 4}} variant='h2' component='h1'>Pexel Film Cast</Typography>
+                    <Typography align='center' sx={{fontVariantCaps: 'all-petite-caps', mt: 4}} variant='h2' component='h1'>Pexel Film Cast</Typography>
                     <Box sx={{width: '100%', display: 'flex', flexFlow: 'column', alignItems:'center', justifyContent: 'space-between', height: '100%', mt: 5, pb: 1}}>
                          { removedWorkers.length === workers.length ? renderWorkerFinished : (
                               <React.Fragment>
                                    {renderWorkers}
                                    <Box sx={{mt: 35}} >
-                                        <Typography sx={{fontVariantCaps: 'all-petite-caps'}} variant='h5' component='h5' >{`<--- Swipe Left To Fire  |  Swipe Right To Hire --->`}</Typography>
+                                        <Typography sx={{fontVariantCaps: 'all-petite-caps'}} variant='subtitle1' component='p' >{`<--- Swipe Left To Fire | Swipe Right To Hire --->`}</Typography>
                                    </Box>
                               </React.Fragment>
                          ) }
