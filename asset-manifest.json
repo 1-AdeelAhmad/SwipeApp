@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/SwipeApp/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/SwipeApp/static/js/main.420cd1ef.chunk.js",
+    "main.js.map": "/SwipeApp/static/js/main.420cd1ef.chunk.js.map",
+    "runtime-main.js": "/SwipeApp/static/js/runtime-main.5b665b28.js",
+    "runtime-main.js.map": "/SwipeApp/static/js/runtime-main.5b665b28.js.map",
+    "static/js/2.31396a04.chunk.js": "/SwipeApp/static/js/2.31396a04.chunk.js",
+    "static/js/2.31396a04.chunk.js.map": "/SwipeApp/static/js/2.31396a04.chunk.js.map",
+    "static/js/3.5679e1d9.chunk.js": "/SwipeApp/static/js/3.5679e1d9.chunk.js",
+    "static/js/3.5679e1d9.chunk.js.map": "/SwipeApp/static/js/3.5679e1d9.chunk.js.map",
+    "index.html": "/SwipeApp/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/SwipeApp/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.31396a04.chunk.js.LICENSE.txt": "/SwipeApp/static/js/2.31396a04.chunk.js.LICENSE.txt",
+    "static/media/bg.86e61508.jpeg": "/SwipeApp/static/media/bg.86e61508.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b665b28.js",
+    "static/js/2.31396a04.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.420cd1ef.chunk.js"
+  ]
+}
