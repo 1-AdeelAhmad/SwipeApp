@@ -81,7 +81,7 @@ const Library = ({ workers, isLoading, error, hiredWorkers, removedWorkers}: Lib
 
      return (
           <Container maxWidth="sm">
-               <Box style={{ height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start'}}>
+               <Box style={{ height: '90vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start'}}>
                     <Typography align='center' sx={{fontVariantCaps: 'all-petite-caps', mt: 4}} variant='h2' component='h1'>Pexel Film Cast</Typography>
                     <Box sx={{width: '100%', display: 'flex', flexFlow: 'column', alignItems:'center', justifyContent: 'space-between', height: '100%', mt: 5, pb: 1}}>
                          { removedWorkers.length === workers.length ? renderWorkerFinished : (

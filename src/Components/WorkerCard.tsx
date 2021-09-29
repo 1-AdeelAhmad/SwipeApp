@@ -16,7 +16,7 @@ export interface WorkerCardProps {
 
 const WorkerCard = ({worker, index, swiped}: WorkerCardProps) => {
      return (
-          <Box sx={{position: 'absolute', marginTop: index*.1, mr: index*.25}}>
+          <Box sx={{position: 'absolute', marginTop: index*.1, mr: index*.3}}>
                <TinderCard
                     preventSwipe={['up', 'down']}
                     onSwipe={(direction) => swiped(direction, worker.name)} >
