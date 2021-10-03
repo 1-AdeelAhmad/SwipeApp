@@ -1,32 +1,29 @@
-import React, {useEffect} from 'react'
-import {useDispatch } from "react-redux";
-import CastLibrary from './Components/CastLibrary'
-import Background from './Assets/Images/bg.jpeg'
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { Container, CssBaseline } from '@mui/material';
+import CastLibrary from './Components/CastLibrary';
+import Background from './Assets/Images/bg.jpeg';
 import { getImages } from './Actions/Actions';
 
-
-const App = () => {
-
-  const dispatch = useDispatch()
+const App: React.FC = () => {
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getImages())
-  }, [dispatch])
+    dispatch(getImages());
+  }, [dispatch]);
 
   return (
-      <Container maxWidth="sm" sx={{backgroundImage: `url(${Background})`, backgroundSize: 'cover'}} >
-        <CssBaseline />
-        <CastLibrary 
-          workers={[]} 
-          isLoading={true}
-          error=''
-          hiredWorkers={[]}
-          removedWorkers={[]}
-        />
-      </Container> 
+    <Container maxWidth="sm" sx={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover' }}>
+      <CssBaseline />
+      <CastLibrary
+        workers={[]}
+        isLoading
+        error=""
+        hiredWorkers={[]}
+        removedWorkers={[]}
+      />
+    </Container>
   );
-}
+};
 
-
-export default App
+export default App;

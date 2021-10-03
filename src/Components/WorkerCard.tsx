@@ -1,7 +1,8 @@
-import React from 'react'
-import { Box } from '@mui/system'
+import React from 'react';
+import { Box } from '@mui/system';
 import TinderCard from 'react-tinder-card';
 import { Paper, Typography } from '@mui/material';
+import * as Styles from '../Styles/Styles';
 
 export interface WorkerObj {
      name: string,
@@ -9,38 +10,27 @@ export interface WorkerObj {
 }
 
 export interface WorkerCardProps {
+     key: string
      worker: WorkerObj,
      index: number,
      swiped: (...args: any[]) => any
 }
 
-const WorkerCard = ({worker, index, swiped}: WorkerCardProps) => {
-     return (
-          <Box sx={{position: 'absolute', marginTop: index*.1, mr: index*.3}}>
-               <TinderCard
-                    preventSwipe={['up', 'down']}
-                    onSwipe={(direction) => swiped(direction, worker.name)} >
-                    <Paper elevation={4} sx={{p: 2, borderRadius: '30px'}} >
-                         <Box sx={{
-                              position: 'relative', 
-                              height: 200, width: 200, 
-                              backgroundImage: `url(${worker.image})`, 
-                              backgroundSize: 'cover', 
-                              backgroundPosition: 'center',
-                              display: 'flex',
-                              flexFlow: 'column',
-                              justifyContent: 'flex-end',
-                              borderRadius: '25px'
-                         }}
-                         >
-                         <Box sx={{backgroundColor: 'black', p:2, borderBottomLeftRadius: '25px', borderBottomRightRadius: '25px'}}> 
-                              <Typography sx={{mt: 2,  fontVariantCaps: 'petite-caps', color: 'white'}} variant='subtitle1' component='label'>{worker.name}</Typography>
-                         </Box>
-                         </Box>
-                    </Paper>
-               </TinderCard>
+const WorkerCard = ({ worker, index, swiped }: WorkerCardProps) => (
+  <Box sx={{ position: 'absolute', marginTop: index * 0.1, mr: index * 0.3 }}>
+    <TinderCard
+      preventSwipe={['up', 'down']}
+      onSwipe={(direction) => swiped(direction, worker.name)}
+    >
+      <Paper elevation={4} sx={{ p: 2, borderRadius: '30px' }}>
+        <Box sx={Styles.workerCardBox} style={{ backgroundImage: `url(${worker.image})` }}>
+          <Box sx={Styles.workerCardTextContainer}>
+            <Typography sx={Styles.text} variant="subtitle1" component="label">{worker.name}</Typography>
           </Box>
-     )
-}
+        </Box>
+      </Paper>
+    </TinderCard>
+  </Box>
+);
 
 export default WorkerCard;

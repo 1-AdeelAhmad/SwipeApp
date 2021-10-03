@@ -5,7 +5,6 @@ export interface Dictionary<T> {
 export interface ImageStateP {
      getImages: ImageState,
      updateWorkers: WorkerState,
-     
 }
 
 export interface ImageState {
